@@ -1,0 +1,12 @@
+<header id="header">
+
+  <nav>
+    {% for item in site.data.settings.blogmenu %}
+      <a href="{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+
+  <h1><span>{{ site.data.settings.blog-title }}</span></h1>
+  
+
+</header>

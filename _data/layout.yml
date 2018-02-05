@@ -1,0 +1,17 @@
+# Layout settings
+
+animation: "bounceOut"
+
+# Images
+
+logo: "logo.svg"
+hero: "spacepurple.jpg"
+avatar: "blakeplanesmall.jpg"
+
+# Colors
+
+accent: "#990099"
+textColor: "#666"
+headlineColor: "#333"
+bgcolor: "#e5eaee"
+documentBackgroundColor: "#fff"

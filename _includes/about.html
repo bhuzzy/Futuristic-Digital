@@ -1,0 +1,93 @@
+<section>
+
+  <h3 style="padding-bottom: 0px"> Hello, I'm Blake. </h3>
+
+  <div class="face-lockup">
+
+    <div class="face-img"></div>
+
+    <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
+    <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
+    <div class="icon-browser">{% include icons/icon-browser.html %}</div>
+    <div class="icon-video">{% include icons/icon-video.html %}</div>
+
+  </div>
+
+  <h2 id="about-me">TAKE YOUR BUSINESS INTO THE FUTURE WITH <span class="pink">FUTURISTIC DIGITAL</span></h2>
+
+
+  <div class="blurb">
+    {{ site.data.settings.blurb | markdownify }}
+  </div>
+
+  <div class="graybackground">
+
+      <h2 class="smaller" id="about-me">WHAT<span class="pink"> FUTURISTIC DIGITAL </span>CAN DO FOR YOUR BUSINESS AT A FRACTION OF THE <span class="green">PRICE</span></h2>
+
+      <center>
+      <div class="services-circles">
+
+        <div class="block-webdesign">
+          <img class="picture-webdesign" src="assets/img/webdesign.png">
+          <h4> Lightning Fast Responsive Webdesign </h4>
+        </div>
+
+        <div class="block-logodesign">
+          <img class="picture-logodesign" src="assets/img/logodesign.jpg">
+          <h4> Catchy Logo Design </h4>
+        </div>
+
+        <div class="block-video">
+          <img class="picture-video" src="assets/img/video.jpg">
+          <h4> High Quality Video Commercials </h4>
+        </div>
+
+        <div class="block-seo">
+          <img class="picture-seo" src="assets/img/seo.jpg">
+          <h4> Advanced Search Engine Optimization </h4>
+        </div>
+
+        <div class="block-socialmedia">
+          <img class="picture-socialmedia" src="assets/img/socialmedia.jpg">
+          <h4> Boosting Social Media Awareness </h4>
+        </div>
+
+        <div class="block-ecommerce">
+          <img class="picture-ecommerce" src="assets/img/ecommerce3.jpg">
+          <h4> Easy to Use E-commerce Store</h4>
+        </div>
+
+      </div>
+      <center>
+
+  </div>
+  <br>
+  <center><h4 class='blurb'> <span class="pink"> FUTURISTIC DIGITAL </span> offers all of these services and more, at a fraction of the <span class="green">cost</span> because we have no overhead. </h4></center>
+
+  <center><h4 class='blurb'> If you are ready to grow your business substancially, fill out the <a href="#form">form</a> below, or give me a call or text at <a href="tel:2527144994">252-714-4994</a>. </h4></center>
+    
+
+      {% if site.data.settings.skills %}
+
+      <div class="skill-lockup">
+
+        {% for skill in site.data.settings.skills %}
+
+          <div class="skill-unit">
+            <div class="skill-label">{{ skill.name }}</div>
+            <div class="skill-icons skill-{{ skill.value }}">
+              {% for i in (1..10) %}
+                <span></span>
+              {% endfor %}
+            </div>
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+      {% endif %}
+
+  
+
+</section>

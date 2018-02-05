@@ -1,0 +1,60 @@
+---
+---
+
+<!DOCTYPE html>
+<html class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.data.settings.seo.description }}">
+  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
+  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
+
+  <title>{{ site.data.settings.title }}</title>
+
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/all.css">
+  <link rel="stylesheet" href="../../blog.css">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  {% include analytics.html %}
+</head>
+<body>
+
+<header id="header">
+
+  <nav>
+    {% for item in site.data.settings.servicesmenu %}
+      <a href="{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+
+  <h1><span>{{ site.data.settings.title }}</span></h1>
+  <p class="kicker">{{ site.data.settings.description }}</p>
+
+</header>
+
+<center> <h3>Our Services</h3> </center>
+
+<h2>Lightning Fast Responsive Webdesign</h2>
+
+  <p> We offer websites that are extremely fast, we build our websites with jekyll. Jekyll is similar to wordpress but 5 times faster because it doesn't use a database. We can build websites of any kind. </p>
+  
+<h2>Catchy Logo Design</h2>
+  
+<h2>High Quality Video Commercials</h2>
+ 
+<h2>Advanced Search Engine Optimization</h2>
+  
+<h2>Boosting Social Media Awareness</h2>
+ 
+<h2>Easy to Use E-commerce Store</h2>
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.github.url }}/assets/js/functions.js"></script>
+</body>
+</html>

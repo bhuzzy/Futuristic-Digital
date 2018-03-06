@@ -5,13 +5,13 @@ animation: "bounceOut"
 # Images
 
 logo: "logo.svg"
-hero: "spacepurple.jpg"
-avatar: "blakebrown.jpg"
+hero: "banana.png"
+avatar: "monkeypng.png"
 
 # Colors
 
-accent: "#990099"
-textColor: "#666"
-headlineColor: "#333"
+accent: "#B21818"
+textColor: "#B21818"
+headlineColor: "#B21818"
 bgcolor: "#e5eaee"
 documentBackgroundColor: "#fff"
